@@ -1,0 +1,12 @@
+# Classification-of-CTGs
+The project aims at classifying the CTGs of medical patients into three main categories: normal (no risk), suspect (possibility of risk) and pathologic (under risk) and predicting the medical state of a patient. This classification is performed using several classifiers including SVM and Neural network classifiers. The performance evaluation of each of the classifiers is done and then a comparison between them is noted.
+
+Cardiotocography (CTG) is a simultaneous recording of fetal heart rate (FHR) and uterine contractions (UC) which help in predicting fetal state. It is one of the most common techniques to evaluate maternal and fetal well-being during pregnancy and before delivery. 
+
+The dataset consists of 2126 samples of data with fetal state classes: (1=normal, 2=suspect, 3=pathologic) as labels and 23 features: 
+(LB - FHR baseline (beats per minute), AC - # of accelerations per second, FM - # of fetal movements per second, UC - # of uterine contractions per second, DL - # of light decelerations per second, DS - # of severe decelerations per second, DP - # of prolonged decelerations per second, ASTV - percentage of time with abnormal short term variability, MSTV - mean value of short term variability, ALTV - percentage of time with abnormal long term variability, MLTV - mean value of long term variability, Width - width of FHR histogram, Min - minimum of FHR histogram, Max - Maximum of FHR histogram, Nmax - # of histogram peaks, Nzeros - # of histogram zeros, Mode - histogram mode, Mean - histogram mean, Median - histogram median, Variance - histogram variance, Tendency - histogram tendency, CLASS - FHR pattern class code (1 to 10), NSP - fetal state class code (N=normal; S=suspect; P=pathologic)
+The dataset used is from https://archive.ics.uci.edu/ml/datasets/Cardiotocography under the UCI Machine Learning Repository
+
+The machine learning algorithms intended to be used for the classification are: Neural network, AdaBoost, Gradient Boosting, Perceptron, KNN, Support Vector Machine (SVM), Decision tree and Random forest algorithms. The metrics used to evaluate performance of these algorithms would be: Classification Accuracy, Confusion Matrix, F1 Score, Mean Absolute Error, Mean Squared Error or any other metric specific to an algorithm.
+
+This project provides assistance for the obstetricians in classifying the patient CTGs and assessing the state of the fetus better, thus taking an action appropriately.
